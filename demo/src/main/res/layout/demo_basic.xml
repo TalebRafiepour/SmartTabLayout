@@ -11,6 +11,7 @@
   app:stl_indicatorInterpolation="linear"
   app:stl_indicatorThickness="3dp"
   app:stl_underlineThickness="1dp"
+    app:stl_fontAssetSrc="@string/custom_font"
   />
 
 

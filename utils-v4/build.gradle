@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.github.ben-manes.versions'
 apply plugin: 'com.github.hierynomus.license'
 
@@ -22,6 +24,8 @@ android {
 
 dependencies {
   implementation "androidx.fragment:fragment:${ANDROIDX_BASE_VERSION}"
+  implementation "androidx.core:core-ktx:+"
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 license {
@@ -38,3 +42,6 @@ license {
 
 pkginfo.name = ARTIFACT_NAME + '-V4Utils'
 apply from: "${project.rootDir}/publish.gradle"
+repositories {
+  mavenCentral()
+}
