@@ -86,6 +86,7 @@ This should usually be placed above the ViewPager it represents.
     app:stl_clickable="true"
     app:stl_titleOffset="24dp"
     app:stl_drawDecorationAfterTab="false"
+    app:stl_fontAssetSrc="fonts/OCRAEXT.ttf"
     />
 
 <androidx.viewpager.widget.ViewPager
@@ -172,6 +173,7 @@ There are several attributes you can set:
 | stl_clickable | If set to false, disable the selection of a tab click, default true |
 | stl_titleOffset | If set to 'auto_center', the slide position of the tab in the middle it will keep to the center. If specify a dimension it will be offset from the left edge, default 24dp |
 | stl_drawDecorationAfterTab | Draw the decoration(indicator and lines) after drawing of tab, default false |
+| stl_fontAssetSrc | set custom font source (like -> fonts/yourFontName.ttf) to apply on tab text |
 
 *__Notes:__ Both 'stl_indicatorAlwaysInCenter' and 'stl_distributeEvenly' if it is set to true, it will throw UnsupportedOperationException.*
 
