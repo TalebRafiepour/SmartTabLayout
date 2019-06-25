@@ -31,6 +31,27 @@ dependencies {
 }
 ```
 
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ ```
+
+
+```
+android {
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+```
+
+
 Include the SmartTabLayout widget in your layout.
 This should usually be placed above the ViewPager it represents.
 
